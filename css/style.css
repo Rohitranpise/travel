@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sofia", sans-serif;
+}
+
+/* navigation bar */
+
+#navbar {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* logo */
+
+#logo {
+    margin: 34px 35px;
+}
+
+#logo-img {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar li a:hover {
+    color: black;
+}
+
+/* home */
+
+#Home {
+    display: flex;
+    height: 414px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before {
+    content: '';
+    background: url("https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1699574400&semt=ais") no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#Home h1 {
+    text-align: center;
+    color: white;
+}
+
+#Home p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* services section */
+#services {
+    margin: 25px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(174, 152, 152);
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.h-primary-center {
+    margin: 78px auto;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 35px;
+}
